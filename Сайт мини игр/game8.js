@@ -1,35 +1,4 @@
-// Массив возможных вариантов
-const options = ["камень", "ножницы", "бумага"];
 
-// Запрашиваем выбор пользователя
-let userChoice = prompt("Выберите: камень, ножницы или бумага").toLowerCase();
-
-// Проверка на правильность ввода
-if (!options.includes(userChoice)) {
-  alert("Неверный выбор! Пожалуйста, выберите камень, ножницы или бумага.");
-} else {
-  // Генерация случайного выбора для компьютера
-  let computerChoice = options[Math.floor(Math.random() * options.length)];
-
-  // Выводим выборы
-  alert(`Вы выбрали: ${userChoice}`);
-  alert(`Компьютер выбрал: ${computerChoice}`);
-
-  // Определение победителя
-  if (userChoice === computerChoice) {
-    alert("Ничья!");
-  } else if (
-    (userChoice === "камень" && computerChoice === "ножницы") ||
-    (userChoice === "ножницы" && computerChoice === "бумага") ||
-    (userChoice === "бумага" && computerChoice === "камень")
-  ) {
-    alert("Вы победили!");
-  } else {
-    alert("Вы проиграли!");
-  }
-}
-
-<script>
   // Массив с возможными выборами
   const options = ["камень", "ножницы", "бумага"];
 
@@ -67,4 +36,3 @@ if (!options.includes(userChoice)) {
 
   // Добавляем обработчик события для кнопки
   document.getElementById('playButton').addEventListener('click', playGame);
-</script>
