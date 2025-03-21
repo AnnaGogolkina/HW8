@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт мини-игр</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+</head>
+<body>
+    <main class="main">
+        <div class="main-box center">
+            <h1 class="main-header">Добро пожаловать <br> на мой сайт мини-игр</h1>
+            <h2 class="main-subheader">Тебе предстоит пройти несколько увлекательных игр.<br> Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</h2>
+            <button class="main-button">Поехали!</button>
+        </div> 
+        <div class='block'><p>ВИКТОРИНА УГАДАЙ ЧИСЛО ПЕРЕВЕРНИ ТЕКСТ ПРОСТАЯ АРИФМЕТИКА КАМЕНЬ, НОЖНИЦЫ, БУМАГА ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</p></div>
+    </main>
+    <section class="block-cards">
+        <h1 class="section-header">Об играх</h1>
+        <h2 class="section-subheader">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br> Все игры доступны для пользования.</h2>
+        <div class="cards__container">
+            <div class="card__item card__item-1">
+                <div class="card__image">
+                    <img src="./Обложка карточки1.png" alt="Обложка первой игры">
+                </div>
+                <div class="card__number">Игра № 1</div>
+                <div class="card__name">Угадай число</div>
+            </div>
+            <div class="card__item card__item-2">
+                <div class="card__image">
+                    <img src="./Обложка карточки2.png" alt="Обложка второй игры">
+                </div>
+                <div class="card__number">Игра № 2</div>
+                <div class="card__name">Простая  арифметика</div>
+            </div>
+            <div class="card__item card__item-3">
+                <div class="card__image">
+                    <img src="./Обложка карточки3.png" alt="Обложка третьей игры">
+                </div>
+                <div class="card__number">Игра № 3</div>
+                <div class="card__name">Переверни текст</div>
+            </div>
+
+            <div class="card__item card__item-4">
+                <div class="card__image">
+                    <img src="./Обложка карточки4.png" alt="Обложка четвертой игры">
+                </div>
+                <div class="card__number">Игра № 4</div>
+                <div class="card__name">Камень,<br> ножницы,<br>бумага</div>
+            </div>
+            <div class="card__item card__item-5">
+                <div class="card__image">
+                    <img src="./Обложка карточки5.png" alt="Обложка пятой игры">
+                </div>
+                <div class="card__number">Игра № 5</div>
+                <div class="card__name">Простая<br>викторина</div>
+            </div>
+            <div class="card__item card__item-6">
+                <div class="card__image">
+                    <img src="./Обложка карточки6.png" alt="Обложка шестой игры">
+                </div>
+                <div class="card__number">Игра № 6</div>
+                <div class="card__name">Генератор <br>случайных <br>цветов</div>
+            </div>
+
+        </div>
+
+        </div>
+        
+    </section>
+    <section class="cards__mobile">
+        
+        <div class="cards__container-mobile">
+            <h1 class="section-header__mobile">Мини-игры</h1>
+            <div class="card__item-mobile card__item-1-mobile">
+                <div class="card__image-mobile">
+                    <img src="./Обложка карточки.mob1.png" alt="Обложка первой игры">
+                </div>
+                <div class="card__text">
+                    <div class="card__name-mobile">Угадай число</div>
+                <div class="card__description-mobile">Попробуй угадать случайное  число от 1 до 100.</div>
+                </div>
+                <button class="button__mobile">Играть!</button>
+            </div>
+            <div class="card__item-mobile card__item-2-mobile">
+                <div class="card__image-mobile">
+                    <img src="./Обложка карточки.mob2.png" alt="Обложка второй игры">
+                </div>
+                <div class="card__text">
+                    <div class="card__name-mobile">Простая арифметика</div>
+                <div class="card__description-mobile">Попробуй решить простые  арифметические задачи.</div>
+                </div>
+                <button class="button__mobile">Играть!</button>
+            </div>
+            <div class="card__item-mobile card__item-3-mobile">
+                <div class="card__image-mobile">
+                    <img src="./Обложка карточки.mob3.png" alt="Обложка третьей игры">
+                </div>
+                <div class="card__text">
+                    <div class="card__name-mobile">Переверни текст</div>
+                <div class="card__description-mobile">Попробуй ввести текст, который  будет перевернут.</div>
+                </div>
+                <button class="button__mobile playButton">Играть!</button>
+            </div>
+            <div class="card__item-mobile card__item-4-mobile">
+                <div class="card__image-mobile">
+                    <img src="./Обложка карточки.mob4.png" alt="Обложка четвертой игры">
+                </div>
+                <div class="card__text">
+                    <div class="card__name-mobile">Викторина</div>
+                <div class="card__description-mobile">Отвечай на вопросы викторины с вариантами ответов.</div>
+                </div>
+                <button class="button__mobile quiz__button">Играть!</button>
+            </div>
+            <div class="card__item-mobile card__item-5-mobile">
+                <div class="card__image-mobile">
+                    <img src="./Обложка карточки.mob5.png" alt="Обложка пятой игры">
+                </div>
+                <div class="card__text">
+                    <div class="card__name-mobile">Камень,  ножницы,  бумага</div>
+                        <div class="card__description-mobile">Сыграй в популярную игру против компьютера.</div>
+                </div>
+                <button class="button__mobile">Играть!</button>
+            </div>
+            <div class="card__item-mobile card__item-6-mobile">
+                <div class="card__image-mobile">
+                    <img src="./Обложка карточки.mob6.png" alt="Обложка шестой игры">
+                </div>
+                <div class="card__text">
+                    <div class="card__name-mobile">Генератор  случайных  цветов</div>
+                        <div class="card__description-mobile">Игра, в которой при клике  на кнопку фон страницы меняется на случайный.</div>
+                </div>
+                <button class="button__mobile">Играть!</button>
+            </div>
+    
+        </div>
+
+    </section>
+   
+    <section class="block__boxes">
+        <h1 class="header__boxes">Мини-игры</h1>
+        <div class="container__box">
+            <div class="box__card-1">
+                   <div class="box__text">
+                       <p class="box__name">Угадай число</p>
+                       <p class="box__description">Попробуй угадать случайное <br>число от 1 до 100.</p>
+                       <button class="box__button">Играть!</button>
+                   </div>
+                   <div class="image__box">
+                    <img src="./Обложка карточки11.png">
+                   </div>
+            </div>
+
+            <div class="box__card box__card-2">
+                <div class="image__box">
+                    <img src="./Обложка карточки12.png">
+                   </div>
+                <div class="box__text">
+                    <p class="box__name">Простая<br>арифметика</p>
+                    <p class="box__description">Попробуй решить простые<br> арифметические задачи.</p>
+                    <button class="box__button">Играть!</button>
+                </div>   
+         </div>
+
+         <div class=" box__card box__card-3">
+            <div class="box__text">
+                <p class="box__name">Переверни текст</p>
+                <p class="box__description">Попробуй ввести текст, который <br>будет перевернут</p>
+                <button class="box__button playButton">Играть!</button>
+            </div>
+            <div class="image__box">
+             <img src="./Обложка карточки13.png">
+            </div>
+     </div>
+
+     <div class="box__card box__card-4">
+         <div class="image__box">
+             <img src="./Обложка карточки14.png">
+            </div>
+         <div class="box__text">
+             <p class="box__name">Викторина</p>
+             <p class="box__description">Отвечай на вопросы викторины<br>с вариантами ответов.</p>
+             <button class="box__button quiz__button">Играть!</button>
+         </div>  
+  </div>  
+  <div class=" box__card box__card-5">
+    <div class="box__text">
+        <p class="box__name">Камень, <br>ножницы, <br>бумага</p>
+        <p class="box__description">Сыграй в популярную игру против компьютера.</p>
+        <button class="box__button">Играть!</button>
+    </div>
+    <div class="image__box">
+     <img src="./Обложка карточки15.png">
+    </div>
+</div>
+
+<div class="box__card box__card-6">
+    <div class="image__box">
+        <img src="./Обложка карточки16.png">
+       </div>
+       <div class="box__text">
+        <p class="box__name">Генератор <br>случайных <br>цветов</p>
+        <p class="box__description">Игра, в которой при клике на кнопку<br> фон страницы меняется на случайный.</p>
+        <button class="box__button">Играть!</button>
+    </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__text">Все права защищены.</p>
+    </footer>
+    <script src="./game.js"></script>
+    <script src="./quiz.js"></script> 
+</body>
+</html>
