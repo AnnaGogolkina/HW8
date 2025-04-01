@@ -13,60 +13,69 @@
 </head>
 <body>
     <main class="main">
-        <div class="main-box center">
-            <h1 class="main-header">Добро пожаловать <br> на мой сайт мини-игр</h1>
-            <h2 class="main-subheader">Тебе предстоит пройти несколько увлекательных игр.<br> Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</h2>
-            <button class="main-button">Поехали!</button>
+        <div class="main__box center">
+            <h1 class="main__header">Добро пожаловать <br> на мой сайт мини-игр</h1>
+            <h2 class="main__subheader">Тебе предстоит пройти несколько увлекательных игр.<br> Если готов, нажимай <b>«Поехали!»</b> и <b>приступай</b>.</h2>
+            <button class="main__button">Поехали!</button>
         </div> 
-        <div class='block'><p>ВИКТОРИНА УГАДАЙ ЧИСЛО ПЕРЕВЕРНИ ТЕКСТ ПРОСТАЯ АРИФМЕТИКА КАМЕНЬ, НОЖНИЦЫ, БУМАГА ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</p></div>
+        <nav class="line">
+            <ul class="line__list">
+                <li class="line__item">Викторина</li>
+                <li class="line__item">Угадай число</li>
+                <li class="line__item">Переверни текст</li>
+                <li class="line__item">Простая арифтметика</li>
+                <li class="line__item">Камень, ножницы, бумага</li>
+                <li class="line__item">Генератор случайных цветов</li>
+            </ul>
+        </nav>
     </main>
-    <section class="block-cards">
-        <h1 class="section-header">Об играх</h1>
-        <h2 class="section-subheader">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br> Все игры доступны для пользования.</h2>
+    <section class="block-cards cards">
+        <h2 class="cards__header">Об играх</h2>
+        <p class="cards__descr">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br> Все игры доступны для пользования.</p>
         <div class="cards__container">
-            <div class="card__item card__item-1">
+            <article class="card__item card__item-1">
                 <div class="card__image">
-                    <img src="./Обложка карточки1.png" alt="Обложка первой игры">
+                    <img src="./img/Обложкакарточки1.png" alt="Обложка первой игры">
                 </div>
                 <div class="card__number">Игра № 1</div>
                 <div class="card__name">Угадай число</div>
-            </div>
-            <div class="card__item card__item-2">
+            </article>
+            <article class="card__item card__item-2">
                 <div class="card__image">
-                    <img src="./Обложка карточки2.png" alt="Обложка второй игры">
+                    <img src="./img/Обложкакарточки2.png" alt="Обложка второй игры">
                 </div>
                 <div class="card__number">Игра № 2</div>
-                <div class="card__name">Простая  арифметика</div>
-            </div>
-            <div class="card__item card__item-3">
+                <div class="card__name">Простая<br>арифметика</div>
+            </article>
+            <article class="card__item card__item-3">
                 <div class="card__image">
-                    <img src="./Обложка карточки3.png" alt="Обложка третьей игры">
+                    <img src="./img/Обложкакарточки3.png" alt="Обложка третьей игры">
                 </div>
                 <div class="card__number">Игра № 3</div>
                 <div class="card__name">Переверни текст</div>
-            </div>
+            </article>
 
-            <div class="card__item card__item-4">
+            <article class="card__item card__item-4">
                 <div class="card__image">
-                    <img src="./Обложка карточки4.png" alt="Обложка четвертой игры">
+                    <img src="./img/Обложкакарточки4.png" alt="Обложка четвертой игры">
                 </div>
                 <div class="card__number">Игра № 4</div>
                 <div class="card__name">Камень,<br> ножницы,<br>бумага</div>
-            </div>
-            <div class="card__item card__item-5">
+            </article>
+            <article class="card__item card__item-5">
                 <div class="card__image">
-                    <img src="./Обложка карточки5.png" alt="Обложка пятой игры">
+                    <img src="./img/Обложкакарточки5.png" alt="Обложка пятой игры">
                 </div>
                 <div class="card__number">Игра № 5</div>
                 <div class="card__name">Простая<br>викторина</div>
-            </div>
-            <div class="card__item card__item-6">
+            </article>
+            <article class="card__item card__item-6">
                 <div class="card__image">
-                    <img src="./Обложка карточки6.png" alt="Обложка шестой игры">
+                    <img src="./img/Обложкакарточки6.png" alt="Обложка шестой игры">
                 </div>
                 <div class="card__number">Игра № 6</div>
                 <div class="card__name">Генератор <br>случайных <br>цветов</div>
-            </div>
+            </article>
 
         </div>
 
@@ -79,61 +88,61 @@
             <h1 class="section-header__mobile">Мини-игры</h1>
             <div class="card__item-mobile card__item-1-mobile">
                 <div class="card__image-mobile">
-                    <img src="./Обложка карточки.mob1.png" alt="Обложка первой игры">
+                    <img src="./img/Обложкакарточки.mob1.png" alt="Обложка первой игры">
                 </div>
                 <div class="card__text">
                     <div class="card__name-mobile">Угадай число</div>
-                <div class="card__description-mobile">Попробуй угадать случайное  число от 1 до 100.</div>
+                <div class="card__description-mobile">Попробуй угадать случайное число от 1 до 100.</div>
                 </div>
                 <button class="button__mobile">Играть!</button>
             </div>
             <div class="card__item-mobile card__item-2-mobile">
                 <div class="card__image-mobile">
-                    <img src="./Обложка карточки.mob2.png" alt="Обложка второй игры">
+                    <img src="./img/Обложкакарточки.mob2.png" alt="Обложка второй игры">
                 </div>
                 <div class="card__text">
                     <div class="card__name-mobile">Простая арифметика</div>
-                <div class="card__description-mobile">Попробуй решить простые  арифметические задачи.</div>
+                <div class="card__description-mobile">Попробуй решить простые арифметические задачи.</div>
                 </div>
                 <button class="button__mobile">Играть!</button>
             </div>
             <div class="card__item-mobile card__item-3-mobile">
                 <div class="card__image-mobile">
-                    <img src="./Обложка карточки.mob3.png" alt="Обложка третьей игры">
+                    <img src="./img/Обложкакарточки.mob3.png" alt="Обложка третьей игры">
                 </div>
                 <div class="card__text">
                     <div class="card__name-mobile">Переверни текст</div>
-                <div class="card__description-mobile">Попробуй ввести текст, который  будет перевернут.</div>
+                <div class="card__description-mobile">Попробуй ввести текст, который будет перевернут.</div>
                 </div>
                 <button class="button__mobile playButton">Играть!</button>
             </div>
             <div class="card__item-mobile card__item-4-mobile">
                 <div class="card__image-mobile">
-                    <img src="./Обложка карточки.mob4.png" alt="Обложка четвертой игры">
+                    <img src="./img/Обложкакарточки.mob4.png" alt="Обложка четвертой игры">
                 </div>
                 <div class="card__text">
                     <div class="card__name-mobile">Викторина</div>
-                <div class="card__description-mobile">Отвечай на вопросы викторины с вариантами ответов.</div>
+                <div class="card__description-mobile">Отвечай на вопросы викториныс вариантами ответов.</div>
                 </div>
                 <button class="button__mobile quiz__button">Играть!</button>
             </div>
             <div class="card__item-mobile card__item-5-mobile">
                 <div class="card__image-mobile">
-                    <img src="./Обложка карточки.mob5.png" alt="Обложка пятой игры">
+                    <img src="./img/Обложкакарточки.mob5.png" alt="Обложка пятой игры">
                 </div>
                 <div class="card__text">
-                    <div class="card__name-mobile">Камень,  ножницы,  бумага</div>
+                    <div class="card__name-mobile">Камень, ножницы, бумага</div>
                         <div class="card__description-mobile">Сыграй в популярную игру против компьютера.</div>
                 </div>
                 <button class="button__mobile">Играть!</button>
             </div>
             <div class="card__item-mobile card__item-6-mobile">
                 <div class="card__image-mobile">
-                    <img src="./Обложка карточки.mob6.png" alt="Обложка шестой игры">
+                    <img src="./img/Обложкакарточки.mob6.png" alt="Обложка шестой игры">
                 </div>
                 <div class="card__text">
-                    <div class="card__name-mobile">Генератор  случайных  цветов</div>
-                        <div class="card__description-mobile">Игра, в которой при клике  на кнопку фон страницы меняется на случайный.</div>
+                    <div class="card__name-mobile">Генератор случайных цветов</div>
+                        <div class="card__description-mobile">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</div>
                 </div>
                 <button class="button__mobile">Играть!</button>
             </div>
@@ -152,13 +161,13 @@
                        <button class="box__button">Играть!</button>
                    </div>
                    <div class="image__box">
-                    <img src="./Обложка карточки11.png">
+                    <img src="./img/Обложкакарточки11.png">
                    </div>
             </div>
 
             <div class="box__card box__card-2">
                 <div class="image__box">
-                    <img src="./Обложка карточки12.png">
+                    <img src="./img/Обложкакарточки12.png">
                    </div>
                 <div class="box__text">
                     <p class="box__name">Простая<br>арифметика</p>
@@ -174,13 +183,13 @@
                 <button class="box__button playButton">Играть!</button>
             </div>
             <div class="image__box">
-             <img src="./Обложка карточки13.png">
+             <img src="./img/Обложкакарточки13.png">
             </div>
      </div>
 
      <div class="box__card box__card-4">
          <div class="image__box">
-             <img src="./Обложка карточки14.png">
+             <img src="./img/Обложкакарточки14.png">
             </div>
          <div class="box__text">
              <p class="box__name">Викторина</p>
@@ -195,13 +204,13 @@
         <button class="box__button">Играть!</button>
     </div>
     <div class="image__box">
-     <img src="./Обложка карточки15.png">
+     <img src="./img/Обложкакарточки15.png">
     </div>
 </div>
 
 <div class="box__card box__card-6">
     <div class="image__box">
-        <img src="./Обложка карточки16.png">
+        <img src="./img/Обложкакарточки16.png">
        </div>
        <div class="box__text">
         <p class="box__name">Генератор <br>случайных <br>цветов</p>
