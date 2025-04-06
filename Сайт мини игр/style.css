@@ -15,6 +15,8 @@
 .main{
 background-color: #E1FF8F;
 background-size: cover;
+position:relative;
+overflow:hidden;
 }
 .main__box{
     padding-bottom:246px;
@@ -130,8 +132,6 @@ nav {
     background-color: #202027;
     background-size: cover;
     padding-top:94px;
-    padding-left:120px;
-    padding-right:120px;
     padding-bottom:52px;
   }
 
@@ -146,6 +146,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     gap:32px;
+    align-items:flex-start;
 
   }
   .card__item{
