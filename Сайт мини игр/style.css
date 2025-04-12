@@ -116,7 +116,10 @@ nav {
     font-family:'Montserrat',sans-serif;
     line-height:110%;
 }
-
+.line__item::before{
+  content: url(./img/imgStar.png);
+  margin-right:51px;
+}
   
   @keyframes text {
     0%{
@@ -206,11 +209,7 @@ nav {
     margin-bottom:72px;
 }
 
-.container_box{
-    display:grid;
-    grid-template-rows: repeat(6, 1200px);
-    row-gap: 32px;
-}
+
 .box__card-1,
 .box__card-3,
 .box__card-5{
@@ -281,42 +280,42 @@ nav {
     margin:0;
   }
  
-  @media(max-width:360px){
-    /* .center{
-      padding-left: calc(50% - 180px);
-      padding-right: calc(50% - 180px);
-    } */
+  @media(max-width:376px){
+    .center{
+      padding-left: 16px;
+      padding-right: 16px;
+    } 
     
-    .main-box{
+    .main__box{
       padding-bottom:182px;
       padding-top:147px;
       margin-left:0;
       padding-right:0;
     }
-    .main-header{
+    .main__header{
       font-size:40px;
       line-height:100%;
       text-align:center;
     }
-    .main-subheader{
+    .main__subheader{
       font-size:16px;
       font-weight:400;
       letter-spacing:0px;
       line-height:100%;
       text-align:center;
     }
-    .main-button{
+    .main__button{
       text-align:center;
       margin-left:46px;
       margin-right:46px;
     }
-    .main-header::after{
+    .main__header::after{
       display:none;
     }
-    .main-header::before{
+    .main__header::before{
       display:none;
     }
-    .main-button{
+    .main__button{
       font-size:16px;
       padding:16px 103px;
       font-weight:600;
@@ -333,8 +332,8 @@ nav {
    
     .block__boxes{
       display:none;
-    }
-.cards__mobile{
+    } 
+ .cards__mobile{
   display:block;
   background-color: #202027;
 }
@@ -397,7 +396,7 @@ nav {
     color:#fff;
     padding-bottom:48px; 
     padding-top:48px;  
-}
+} 
 
 .footer__text{
   font-size:16px;
@@ -410,6 +409,6 @@ nav {
   padding-left:29px;
   padding-right: 29px;
 }
-    
-  }
-  
+
+
+}
