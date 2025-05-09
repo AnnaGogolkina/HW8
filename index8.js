@@ -64,14 +64,13 @@ const intervalId = setInterval(() => {
 
 //задание 4
 function delayForSecond(callback) {
-  // Код писать можно только внутри этой функции
- callback();
+  // Вызываем callback через 1 секунду
+  setTimeout(callback, 1000);
 }
-setTimeout(()=>{
-  delayForSecond(function () {
-    console.log('Привет, Глеб!');
-   })
-}, 1000)
+
+delayForSecond(function () {
+  console.log('Привет, Глеб!');
+});
 
 //задание5
 // Функция delayForSecond через 1 секунду пишет в консоль 
