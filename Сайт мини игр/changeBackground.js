@@ -1,0 +1,17 @@
+function getRandomColor() {
+      const symbols = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        const randomIndex = Math.floor(Math.random() * symbols.length);
+        color += symbols[randomIndex];
+      }
+      return color;
+    }
+
+    function changeBackground() {
+      const block = document.getElementById('colorbox');
+      const newColor = getRandomColor();
+      block.style.backgroundColor = newColor;
+      
+    }
+

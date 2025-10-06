@@ -1,0 +1,106 @@
+@media (max-width:980px) {
+
+  .center{
+  padding-left: calc(50% - 400px);
+    padding-right: calc(50% - 400px);
+ } 
+ 
+@media (max-width: 900px) {
+  .image__box {
+    width: 100%;
+  }
+
+  .box__text {
+    text-align: center;
+  }
+}
+
+
+.box__name {
+    font-size: 40px;
+}
+.box__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+    .box__button {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 132%;
+    padding: 12px 70px;
+    border-radius: 60px;
+    }
+  }
+
+@media (max-width: 760px) {
+.center{
+  padding-left: calc(50% - 300px);
+    padding-right: calc(50% - 300px);
+ } 
+  .main__header{
+    font-size:46px;
+  }
+  .main__subheader{
+    font-size:20px;
+  }
+  .cards__header,
+  .header__boxes{
+    font-size:46px;
+  }
+  .cards__desvr{
+    font-size:20px;
+  }
+   .box__card-1,
+    .box__card-3,
+    .box__card-5 {
+    flex-direction: column-reverse;           /* Перестраиваем карточку в столбик */
+    align-items: center;              /* Центрируем содержимое */
+    justify-content: center;
+    text-align: center;               /* Центрируем текст */
+    height: 50%;                     /* Убираем фиксированную высоту */
+    /* padding: 24px 20px;               Добавляем внутренние отступы */
+    border-radius: 40px;              /* Чуть меньше радиус для мобильных */
+  }
+
+   
+  .box__card-2,
+  .box__card-4,
+  .box__card-6 {
+    flex-direction: column;        /* Перестраиваем карточку вертикально */
+    align-items: center;           /* Центрируем всё по горизонтали */
+    justify-content: center;       /* Центрируем по вертикали */
+    text-align: center;            /* Текст по центру */
+    height: 50%;                  /* Убираем фиксированную высоту */            /* Добавляем отступы внутри */
+    border-radius: 40px;           /* Чуть меньше радиус для мобильных */
+  }
+
+  .footer__text{
+    padding-top:60;
+    padding-bottom:60px;
+  }
+
+  .main__box::before{
+    display:none;
+  }
+}
+/* Мобильный (до 600px) */
+@media (max-width: 600px) {
+
+  .image__box {
+    height: 284px;
+  }
+
+  .box__name {
+    font-size: 32px;
+  }
+
+  .box__description {
+    font-size: 16px;
+  }
+
+  .box__button {
+    width: 100%;
+  }
+}

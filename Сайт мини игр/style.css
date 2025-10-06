@@ -96,20 +96,28 @@ overflow:hidden;
 nav {
   background: #88cc44;
   padding: 10px;
+  width: 100%;
 }
 .line__list {
   list-style-type: none;
-  display:flex;
-  justify-content: flex-start;
-  padding-left:50px;
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  animation: moveLine 20s linear infinite;
+  
 }
 
+.line{
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 
 .line__item {
   text-transform: uppercase;
-    padding-top: 27px;
-    animation: text 30s infinite linear;
-    padding-left:20%;
+    padding-top: 27px; 
     white-space: nowrap;
     font-weight:700;
     font-size:30px;
@@ -120,23 +128,24 @@ nav {
 .line__item::before{
   content: url(./img/imgStar.png);
   margin-right:51px;
+  margin-left:51px;
 }
   
-  @keyframes text {
-    0%{
-      transform: translate(0, 0);
-    }
-    
-    100%{
-      transform: translate(-160%, 0);
-    }
+  @keyframes moveLine {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(-50%);
+  }
+}
   .block-cards,
   .block__boxes{
     background-color: #202027;
     background-size: cover;
     padding-top:94px;
     padding-bottom:52px;
+    transition: background-color 0.5s ease;
   }
 
   /* .cards__container {
@@ -146,22 +155,22 @@ nav {
  } */
   .cards__container{
     display:flex;
-    justify-content:baseline;
+    justify-content:center;
     flex-direction: row;
     flex-wrap: wrap;
     gap:32px;
-    align-items:flex-start;
+    /* align-items:flex-start; */
 
   }
   .card__item{
     
     background-color: #FFFFFF;
-    border-radius:60px;
+    border-radius:30px;
     
   }
   .card__item-2,
   .card__item-5{
-    height:512px;
+    /* height:512px; */
   }
   .card__item-4,
   .card__item-6{
@@ -214,25 +223,31 @@ nav {
 .box__card-1,
 .box__card-3,
 .box__card-5{
-    height:500px;
     background-color: #FFFFFF;
     border-radius:60px;
     display:flex;
     justify-content: space-between;
     margin-bottom:32px;
+    overflow:hidden;
     
   }
   .box__card-2,
   .box__card-4,
   .box__card-6{
-    height:500px;
     background-color: #FFFFFF;
     border-radius:60px;
     display:flex;
     justify-content: flex-start;
     margin-bottom:32px;
+    overflow:hidden;
     
   }
+
+  .image__box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
   .box__text{
     margin: 48px 48px 36px 48px;
   }
@@ -277,7 +292,8 @@ nav {
     font-weight:600;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    padding:61px 578px;
+    padding-top:61px;
+    padding-bottom:61px;
     margin:0;
   }
  
@@ -331,10 +347,10 @@ nav {
       font-weight:600;
     }
    
-    .block__boxes{
+    /* .block__boxes{
       display:none;
-    } 
- .cards__mobile{
+    }  */
+ /* .cards__mobile{
   display:block;
   background-color: #202027;
 }
@@ -386,6 +402,7 @@ nav {
       background-color: #FFFFFF;
       border-radius:30px;
       margin-bottom:24px;
+      overflow:hidden;
       
     }
 
@@ -397,7 +414,7 @@ nav {
     color:#fff;
     padding-bottom:48px; 
     padding-top:48px;  
-} 
+}  */
 
 .footer__text{
   font-size:16px;
