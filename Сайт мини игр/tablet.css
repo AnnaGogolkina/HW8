@@ -86,8 +86,37 @@
   }
 }
 /* Мобильный (до 600px) */
+
+
 @media (max-width: 600px) {
 
+  .block-cards{
+  display:none;
+}
+.center{
+  padding-left: calc(50% - 300px);
+  padding-right: calc(50% - 300px);
+ } 
+
+ .main__header{
+      font-size:40px;
+      line-height:100%;
+      text-align:center;
+    }
+
+    .main__subheader{
+      font-size:16px;
+      font-weight:400;
+      letter-spacing:0px;
+      line-height:100%;
+      text-align:center;
+    }
+  
+.main__button{
+      text-align:center;
+      margin-left:46px;
+      margin-right:46px;
+    }
   .image__box {
     height: 284px;
   }

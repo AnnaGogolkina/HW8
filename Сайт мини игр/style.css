@@ -117,7 +117,7 @@ nav {
 
 .line__item {
   text-transform: uppercase;
-    padding-top: 27px; 
+    /* padding-top: 27px;  */
     white-space: nowrap;
     font-weight:700;
     font-size:30px;
@@ -148,18 +148,14 @@ nav {
     transition: background-color 0.5s ease;
   }
 
-  /* .cards__container {
-    display: grid;
-    grid-template-columns: repeat(3, 378px);
-    column-gap:32px;
- } */
+ 
   .cards__container{
     display:flex;
     justify-content:center;
     flex-direction: row;
     flex-wrap: wrap;
     gap:32px;
-    /* align-items:flex-start; */
+   
 
   }
   .card__item{
@@ -168,19 +164,12 @@ nav {
     border-radius:30px;
     
   }
-  .card__item-2,
-  .card__item-5{
-    /* height:512px; */
-  }
+
   .card__item-4,
   .card__item-6{
     height:551px;
   }
-  /* .card__item-1, .card__item-2,
-  .card__item-3{
-    margin-bottom:32px;
-  } */
-
+  
 
   .card__image{
     width:100%;
@@ -347,74 +336,7 @@ nav {
       font-weight:600;
     }
    
-    /* .block__boxes{
-      display:none;
-    }  */
- /* .cards__mobile{
-  display:block;
-  background-color: #202027;
-}
-.section-header-mobile{
-  font-size:40px;
-  font-weight:700;
-  padding-top:48px;
-  padding-bottom:48px;
-}
-
-    .card__name-mobile{
-      font-size:32px;
-      font-weight: 600;
-      font-family:'Montserrat',sans-serif;
-      letter-spacing: 0%;
-      line-height: 100%;
-      margin-bottom:16px;
-      padding-top:32px;
-      text-align:left;
-    }
-
-    .card__description-mobile{
-      font-size:16px;
-      font-weight: 400;
-      font-family:'Montserrat',sans-serif;
-      line-height: 100%;
-      margin-bottom:32px;
-      text-align:left
-    }
-    .button__mobile{
-      font-size:16px;
-      padding:16px 110px;
-      font-weight:600;
-      background-color: #202027;
-      color: #FFFFFF;
-      font-family:'Montserrat',sans-serif;
-      margin-bottom:32px;
-      margin-left:29px;
-      margin-right:29px;
-      border:solid 1px #202027;
-      border-radius:60px;
-      transition:all 0.3s;
-    }
-    .button__mobile:hover{
-      background-color: #fff;
-      color: #202027;
-    }
-    .card__item-mobile{
-      background-color: #FFFFFF;
-      border-radius:30px;
-      margin-bottom:24px;
-      overflow:hidden;
-      
-    }
-
     
-  .section-header__mobile{
-    font-weight:600;
-    font-size:40px;
-    font-family:'Montserrat', sans-serif;
-    color:#fff;
-    padding-bottom:48px; 
-    padding-top:48px;  
-}  */
 
 .footer__text{
   font-size:16px;
