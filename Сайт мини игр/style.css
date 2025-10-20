@@ -63,9 +63,11 @@ overflow:hidden;
   }
 .main__box::before{
     content: url(./img/img.1.png);
-    top: 9px;
-    left:924px;
+    top: 0px;
+    /* left:924px; */
+    right:0;
     position:absolute;
+    z-index:0;
 }
 
 .main__button::before{
